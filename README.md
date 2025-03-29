@@ -1,113 +1,105 @@
-### 📁 Repository Structure Suggestion
+### 🧠 Object Detection Using OpenCV, Detectron2 & YOLOv5
+
+This mini-project demonstrates how to perform **object detection** using three powerful tools in computer vision: **OpenCV**, **Detectron2**, and **YOLOv5**. The project is implemented in a Jupyter Notebook using Python.
+
+---
+
+## 📂 Project Structure
 
 ```
-opencv-object-detection/
+📁 your-repo-name/
 │
-├── OPENCV.ipynb               # Your Jupyter Notebook
-├── README.md                  # Project documentation
-├── requirements.txt           # List of required Python packages
-└── assets/                    # (Optional) Folder for sample images or outputs
+├── OPENCV.ipynb           # Main Jupyter notebook with object detection code
+├── requirements.txt       # Python dependencies (optional)
+└── README.md              # This file
 ```
 
 ---
 
-### 📝 README.md Content
+## 🚀 Libraries Used
 
-```markdown
-# 🧠 Object Detection using OpenCV, Detectron2, and YOLOv5
-
-This is a mini project demonstrating object detection using popular deep learning libraries in Python, including OpenCV, Detectron2, and YOLOv5. The notebook includes multiple approaches to detecting and recognizing objects in images/videos using different models.
-
-## 📌 Libraries Used
-
-- OpenCV
-- Detectron2
-- YOLOv5
-- NumPy
-- Matplotlib
-- Torch
-- PIL
-
-## 📁 File
-
-- `OPENCV.ipynb`: The main Jupyter notebook with code and outputs for object detection using different frameworks.
-
-## 🚀 Features
-
-- Object detection using OpenCV's DNN module
-- Instance segmentation using Facebook AI's Detectron2
-- Real-time object detection using YOLOv5
-- Visualizations and comparisons between different approaches
-
-## 📷 Sample Output
-
-(Add images or screenshots from the notebook here if available. Place them in an `assets/` folder)
-
-## 🛠️ Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/your-username/opencv-object-detection.git
-cd opencv-object-detection
-```
-
-### Set up the environment
-
-Install required packages using:
-
-```bash
-pip install -r requirements.txt
-```
-
-> Make sure you have Python 3.8+ installed.
-
-### Additional Setup
-
-- For **Detectron2**, follow the official installation guide: [https://github.com/facebookresearch/detectron2](https://github.com/facebookresearch/detectron2)
-- For **YOLOv5**, clone the repo and install dependencies:
-
-```bash
-git clone https://github.com/ultralytics/yolov5
-cd yolov5
-pip install -r requirements.txt
-```
-
-## 📖 Usage
-
-Open the notebook:
-
-```bash
-jupyter notebook OPENCV.ipynb
-```
-
-Run each cell step-by-step and view the results.
-
-## 💡 Future Work
-
-- Live object detection from webcam
-- Performance comparison (FPS, accuracy)
-- Custom training using YOLOv5
-
-## 📬 Contact
-
-Jaya Krishna Sangoju  
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/) or open an issue on this repo.
+- **OpenCV** – For image/video manipulation and basic detection tasks.
+- **Detectron2** – Facebook AI Research’s library for state-of-the-art object detection.
+- **YOLOv5** – Ultralytics’ real-time object detection framework.
+- **PyTorch** – Backend for Detectron2 and YOLOv5.
 
 ---
 
-⭐ If you like this project, give it a star!
-```
+## 🔍 What This Project Does
+
+1. **Image Input using OpenCV**
+   - Loads an image using OpenCV.
+   - Basic visualization using `cv2.imshow`.
+
+2. **Object Detection using Detectron2**
+   - Initializes a pre-trained Detectron2 model (e.g., Faster R-CNN or Mask R-CNN).
+   - Performs inference on the input image.
+   - Displays the predicted bounding boxes and classes.
+
+3. **Object Detection using YOLOv5**
+   - Uses a pre-trained YOLOv5 model.
+   - Inference on the image.
+   - Visualizes results with bounding boxes and confidence scores.
 
 ---
 
-### 📦 `requirements.txt` Sample
+## 📸 Sample Output
 
-```txt
-opencv-python
-matplotlib
-numpy
-torch
-Pillow
-```
+> You can include screenshots here, like:
+- Image before detection
+- Image after Detectron2 detection
+- Image after YOLOv5 detection
+
+---
+
+## 🛠️ How to Run
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. **Install dependencies**
+   - Create a virtual environment (optional):
+     ```bash
+     python -m venv venv
+     source venv/bin/activate  # or venv\Scripts\activate on Windows
+     ```
+
+   - Install required packages:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Run the Notebook**
+   - Open the Jupyter Notebook:
+     ```bash
+     jupyter notebook OPENCV.ipynb
+     ```
+
+---
+
+## ✅ Results
+
+- Detectron2 successfully detects multiple objects with high accuracy.
+- YOLOv5 runs fast and shows competitive results.
+- The notebook allows a side-by-side comparison of both models.
+
+---
+
+## 📚 Future Improvements
+
+- Support for video streams and real-time webcam detection.
+- Add more models (like YOLOv8 or SSD).
+- Deployment as a web app using Streamlit or Flask.
+
+---
+
+## 🙋‍♂️ Author
+
+**Jaya Krishna Sangoju**  
+🔗 [LinkedIn](https://www.linkedin.com) | 📧 jaya23krishna2000@example.com
+
+---
 
